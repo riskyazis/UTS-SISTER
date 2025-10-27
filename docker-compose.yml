@@ -1,0 +1,35 @@
+version: "3.8"
+
+services:
+  aggregator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: log-aggregator
+    ports:
+      - "8080:8080"
+    volumes:
+      - aggregator-data:/app/data
+    networks:
+      - internal-net
+    restart: unless-stopped
+
+  publisher:
+    build:
+      context: .
+      dockerfile: Dockerfile.publisher
+    container_name: log-publisher
+    depends_on:
+      - aggregator
+    environment:
+      - AGGREGATOR_URL=http://aggregator:8080
+    networks:
+      - internal-net
+    restart: unless-stopped
+
+volumes:
+  aggregator-data:
+
+networks:
+  internal-net:
+    driver: bridge
