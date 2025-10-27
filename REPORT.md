@@ -1,8 +1,8 @@
-# Laporan Tugas UTS: Pub-Sub Log Aggregator dengan Idempotent Consumer dan Deduplication
+# Laporan UTS
 
-**Mata Kuliah**: Sistem Terdistribusi  
-**Tema**: Pub-Sub Log Aggregator dengan Idempotent Consumer dan Deduplication  
-**Tanggal**: 25 Oktober 2025
+**Mata Kuliah**: Sistem Paralel dan Terdistribusi B  
+**Nama**: Muhammat Risky Azis
+**NIM**: 11211065
 
 ---
 
@@ -146,7 +146,7 @@ Publisher    API       Antrian    Consumer    DedupStore
 
 ---
 
-## 3. Bagian Teori (40%)
+## 3. Bagian Teori
 
 ### T1 (Bab 1): Karakteristik Sistem Terdistribusi dan Trade-off pada Pub-Sub Log Aggregator
 
@@ -617,7 +617,5 @@ Sistem Pub-Sub Log Aggregator ini berhasil mengimplementasikan **idempotent cons
 van Steen, M., & Tanenbaum, A. S. (2023). _Distributed systems_ (4th ed.). Maarten van Steen.
 
 **Lampiran**: Lihat `README.md` untuk instruksi lengkap build, run, dan testing.
-
-**Video Demo**: [Link YouTube] - Demonstrasi build, deployment, API testing, dan crash recovery.
 
 ---

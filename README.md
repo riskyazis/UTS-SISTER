@@ -458,28 +458,3 @@ pytest tests/ -v -s
 ## 📚 Referensi
 
 Tanenbaum, A. S., & Van Steen, M. (2007). _Distributed systems: Principles and paradigms_ (2nd ed.). Pearson Prentice Hall.
-
-## 🎥 Video Demo
-
-[Link YouTube Demo] - (Upload video demo 5-8 menit di sini)
-
-**Isi Video**:
-
-1. Build Docker image
-2. Run container
-3. Demonstrasi publish events (termasuk duplicate)
-4. Check /events dan /stats endpoints
-5. Restart container dan tunjukkan persistensi
-6. Penjelasan arsitektur (30-60 detik)
-
-## 📄 Lisensi
-
-MIT License - Dibuat untuk keperluan akademis UTS Sistem Terdistribusi.
-
-## 👤 Author
-
-Risky - Tugas UTS Sistem Terdistribusi
-
----
-
-**Catatan**: Sistem ini dibuat untuk keperluan pembelajaran dan demonstrasi konsep sistem terdistribusi. Untuk production use, pertimbangkan menggunakan message broker seperti RabbitMQ, Kafka, atau NATS.
